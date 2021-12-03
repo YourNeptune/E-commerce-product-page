@@ -8,7 +8,7 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
-.container {
+.NavContainer {
   display: flex !important;
   justify-content: center !important;
   align-items: baseline !important;
@@ -39,4 +39,32 @@
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+}
+
+.mainContentContainer {
+  display: flex !important;
+  align-items: center !important;
+  height: 100%;
+  overflow: hidden;
+}
+
+.Image_big {
+  border-radius: 12px !important;
+  height: 400px;
+}
+.Image_sm {
+  border-radius: 12px !important;
+  height: 45%;
+}
+
+.cardsContainer {
+  margin-top: 5rem;
+}
+.myRow {
+  margin-bottom: 2rem;
+}
+.myCol {
+}
+.Cards_sm_Row {
+  height: 100px;
 }

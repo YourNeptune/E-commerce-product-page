@@ -8,9 +8,9 @@ const NavBar = () => {
   return (
     <div>
       <Navbar>
-        <Container className="container">
+        <Container className="NavContainer">
           <Navbar.Brand href="#home">
-            <img src={logoSVG} className="logo"/>
+            <img src={logoSVG} className="logo" alt=""/>
           </Navbar.Brand>
           <Nav className="nav-part1 me-auto">
             <Nav.Link href="#Collection" className="nav-part1--margin">Collection</Nav.Link>
