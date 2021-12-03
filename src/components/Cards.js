@@ -16,7 +16,7 @@ const Cards = () => {
                 <Col className="myCol"><Image src={image_product_1} className="Image_big"/></Col>
             </Row>
             <Row className="Cards_sm_Row " sm={4}>
-                <Col><Image src={image_product_1_thumbnail}  className="Image_sm"/></Col>
+                <Col><Image src={image_product_1_thumbnail}  className="Image_sm Image--active"/></Col>
                 <Col><Image src={image_product_2_thumbnail}  className="Image_sm"/></Col>
                 <Col><Image src={image_product_3_thumbnail}  className="Image_sm"/></Col>
                 <Col><Image src={image_product_4_thumbnail}  className="Image_sm"/></Col>
