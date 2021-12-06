@@ -58,6 +58,9 @@
   display: block !important;
   cursor: pointer;
 }
+.Image_sm--hover:hover {
+  opacity: 0.5;
+}
 
 .cardsContainer {
   margin-top: 4rem;
