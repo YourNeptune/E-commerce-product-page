@@ -53,14 +53,16 @@
   height: 400px;
 }
 .Image_sm {
-  border-radius: 12px !important;
-  height: 45%;
+  border-radius: 8px !important;
+  width: 100%;
   display: block !important;
   cursor: pointer;
+  /* vertical-align: bottom !important; */
+  /* vertical-align: -webkit-baseline-middle !important; */
 }
 
 .cardsContainer {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 .myRow {
   margin-bottom: 2rem;
@@ -70,8 +72,11 @@
 .Cards_sm_Row {
   height: 100px;
 }
+.Image--border {
+  border-radius: 12px !important;
+  border: 4px solid rgb(255, 166, 0);
+}
 
-.Image--active{
-  border: 3px solid rgb(255, 166, 0);
-  opacity: 0.5;
+.Image--active {
+  opacity: 0.3;
 }
