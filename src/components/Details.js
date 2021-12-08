@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Button, Col } from "react-bootstrap";
 import icon_minus from "../images/icon-minus.svg";
 import icon_plus from "../images/icon-plus.svg";
-import cartSVG from "../images/icon-cart.svg";
+import cartSVG from "../images/icon-cart2.svg";
 
 const Details = () => {
   const [number, setNumber] = useState(0);
@@ -43,7 +43,7 @@ const Details = () => {
         {/* Add to cart button */}
         <Col>
           <Button size="lg" className="AddToCartButton">
-            {/* <img src={cartSVG} /> */}
+            <img src={cartSVG} />
             Add to cart
           </Button>
         </Col>
