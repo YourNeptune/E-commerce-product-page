@@ -6,10 +6,10 @@ import Details from "./Details";
 const MainContent = () => {
   return (
     <Container className="mainContentContainer">
-        <Row>
-            <Col><Cards/></Col>
-            <Col><Details/></Col>
-        </Row>    
+      <Row>
+        <Col><Cards/></Col>
+        <Col><Details/></Col>
+      </Row>       
     </Container>
   );
 };

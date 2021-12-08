@@ -7,13 +7,13 @@ import avatar from "../images/image-avatar.png"
 const NavBar = () => {
   return (
     <div>
-      <Navbar>
+      <Navbar className="myNav">
         <Container className="NavContainer">
           <Navbar.Brand href="#home">
             <img src={logoSVG} className="logo" alt=""/>
           </Navbar.Brand>
           <Nav className="nav-part1 me-auto">
-            <Nav.Link href="#Collection" className="nav-part1--margin">Collection</Nav.Link>
+            <Nav.Link href="#Collection" className="nav-part1--margin" style={{}}>Collection</Nav.Link>
             <Nav.Link href="#Men" className="nav-part1--margin">Men</Nav.Link>
             <Nav.Link href="#Women" className="nav-part1--margin">Women</Nav.Link>
             <Nav.Link href="#About" className="nav-part1--margin">About</Nav.Link>
