@@ -6,10 +6,13 @@ import avatar from "../images/image-avatar.png";
 import CartModal from "./CartModal";
 
 const NavBar = () => {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(false);
+  const [numberLabel, setNumberLabel] = useState(0);
+
   const handleShowModal = () => {
     show ? setShow(false) : setShow(true);
-  }
+  };
+
   return (
     <div>
       <Navbar className="myNav">
@@ -18,11 +21,7 @@ const NavBar = () => {
             <img src={logoSVG} className="logo" alt="" />
           </Navbar.Brand>
           <Nav className="nav-part1 me-auto">
-            <Nav.Link
-              href="#Collection"
-              className="nav-part1--margin"
-              style={{}}
-            >
+            <Nav.Link href="#Collection" className="nav-part1--margin">
               Collection
             </Nav.Link>
             <Nav.Link href="#Men" className="nav-part1--margin">
@@ -39,12 +38,11 @@ const NavBar = () => {
             </Nav.Link>
           </Nav>
           <Nav className="nav-part2">
-            <Nav.Link href="#Cart">
-              <img
-                src={cartSVG}
-                className="Navbar__cart"
-                onClick={handleShowModal}
-              />
+            <Nav.Link href="#Cart" className="Navbar__cart">
+              <img src={cartSVG} onClick={handleShowModal} />
+              <div className="Navbar__label">
+                <span>{numberLabel}</span>
+              </div>
             </Nav.Link>
             <Nav.Link href="#Profile">
               <img src={avatar} className="avatar" />

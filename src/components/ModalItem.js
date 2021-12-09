@@ -14,12 +14,9 @@ const ModalItem = () => {
             src={image_product_1_thumbnail}
             className="ModalItem__image"
             id="image_product_1_thumbnail"
-            onClick={(e) => {
-              //   handleImageClick(e);
-            }}
           />
         </Col>
-        <Col  className="ModalItem__Col">
+        <Col className="ModalItem__Col">
           <p>Fall Limited Edition Sneakers</p>
           <p>
             $125.00 x {number} <strong>{`$${totalAmount}`}</strong>

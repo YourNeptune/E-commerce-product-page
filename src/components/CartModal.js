@@ -11,8 +11,7 @@ const CartModal = () => {
         </Modal.Header>
 
         <Modal.Body className="CartModal__Body">
-          {/* ModalItems */}
-          <ModalItem/>
+          <ModalItem />
         </Modal.Body>
         <Button className="CartModal__checkoutButton">Checkout</Button>
       </Modal.Dialog>

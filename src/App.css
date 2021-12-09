@@ -50,6 +50,20 @@
   align-items: center !important;
 }
 
+.Navbar__label {
+  position: relative;
+  bottom:25px;
+  left:10px;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 5px;
+  width:16px;
+  height:12px;
+  color:white;
+  display: grid;
+  place-items: center;
+  font-size: 8px;
+}
+
 .Navbar__cart {
   cursor: pointer;
 }
