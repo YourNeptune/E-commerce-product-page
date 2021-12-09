@@ -8,6 +8,7 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+/* Navbar.js */
 .myNav {
   padding: 0 130px;
 }
@@ -49,6 +50,11 @@
   align-items: center !important;
 }
 
+.Navbar__cart {
+  cursor: pointer;
+}
+
+/* Cards.js */
 .Image_big {
   border-radius: 12px !important;
   height: 300px;
@@ -121,4 +127,44 @@
 
 .AddToCartButton:hover {
   background-color: hsl(27, 100%, 67%) !important;
+}
+
+/* CartModal.js */
+.CartModal {
+  position: absolute;
+  top: 65px;
+  right: 100px;
+  width: 320px;
+}
+
+.CartModal__checkoutButton {
+  margin: 0 18px 20px !important;
+  padding: 10px 0 !important;
+  background-color: hsl(26, 100%, 55%) !important;
+  border: none !important;
+  font-size: 13px !important;
+}
+
+/* ModalItem.js */
+.ModalItem {
+  font-size: 13px;
+}
+.ModalItem p {
+  margin-bottom: 0;
+}
+.ModalItem__image {
+  border-radius: 5px !important;
+  width: 40px;
+  margin-right: 10px;
+}
+.ModalItem__Row {
+}
+
+.ModalItem__Col {
+  align-self: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+}
+.ModalItem__Col p {
+  margin-left: 10px;
 }
