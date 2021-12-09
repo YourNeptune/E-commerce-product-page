@@ -52,13 +52,13 @@
 
 .Navbar__label {
   position: relative;
-  bottom:25px;
-  left:10px;
+  bottom: 25px;
+  left: 10px;
   background-color: hsl(26, 100%, 55%);
   border-radius: 5px;
-  width:16px;
-  height:12px;
-  color:white;
+  width: 16px;
+  height: 12px;
+  color: white;
   display: grid;
   place-items: center;
   font-size: 8px;
@@ -143,12 +143,27 @@
   background-color: hsl(27, 100%, 67%) !important;
 }
 
+.CartModal__Title{
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
 /* CartModal.js */
 .CartModal {
   position: absolute;
   top: 65px;
   right: 100px;
   width: 320px;
+}
+
+.CartModal__Modal {
+  box-shadow: 5px 10px 28px -10px hsl(0, 0%, 69%);
+  border-radius: 20px !important;
+}
+
+/* Change UI CSS */
+.modal-content {
+  border: none !important;
 }
 
 .CartModal__checkoutButton {

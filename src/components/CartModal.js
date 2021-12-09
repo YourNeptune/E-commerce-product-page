@@ -5,9 +5,9 @@ import ModalItem from "./ModalItem";
 const CartModal = ({number}) => {
   return (
     <div className="CartModal">
-      <Modal.Dialog>
+      <Modal.Dialog className="CartModal__Modal">
         <Modal.Header>
-          <Modal.Title>Cart</Modal.Title>
+          <Modal.Title className="CartModal__Title">Cart</Modal.Title>
         </Modal.Header>
 
         <Modal.Body className="CartModal__Body">

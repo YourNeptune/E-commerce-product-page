@@ -5,7 +5,7 @@ import icon_delete from "../images/icon-delete.svg";
 
 const ModalItem = ({number}) => {
   const totalAmount = (number) => {
-    const price = 125 * number;
+    const price = 125.00 * number;
     return `$${price}`
   };
   return (
