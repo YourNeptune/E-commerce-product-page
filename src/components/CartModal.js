@@ -2,7 +2,7 @@ import React from "react";
 import { Modal, Button } from "react-bootstrap";
 import ModalItem from "./ModalItem";
 
-const CartModal = () => {
+const CartModal = ({number}) => {
   return (
     <div className="CartModal">
       <Modal.Dialog>
@@ -11,7 +11,7 @@ const CartModal = () => {
         </Modal.Header>
 
         <Modal.Body className="CartModal__Body">
-          <ModalItem />
+          <ModalItem number={number}/>
         </Modal.Body>
         <Button className="CartModal__checkoutButton">Checkout</Button>
       </Modal.Dialog>

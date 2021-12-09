@@ -5,9 +5,8 @@ import cartSVG from "../images/icon-cart.svg";
 import avatar from "../images/image-avatar.png";
 import CartModal from "./CartModal";
 
-const NavBar = () => {
+const NavBar = ({number}) => {
   const [show, setShow] = useState(false);
-  const [numberLabel, setNumberLabel] = useState(0);
 
   const handleShowModal = () => {
     show ? setShow(false) : setShow(true);
@@ -41,7 +40,7 @@ const NavBar = () => {
             <Nav.Link href="#Cart" className="Navbar__cart">
               <img src={cartSVG} onClick={handleShowModal} />
               <div className="Navbar__label">
-                <span>{numberLabel}</span>
+                <span>{number}</span>
               </div>
             </Nav.Link>
             <Nav.Link href="#Profile">
@@ -51,7 +50,7 @@ const NavBar = () => {
         </Container>
       </Navbar>
 
-      {show && <CartModal />}
+      {show && <CartModal number={number}/>}
     </div>
   );
 };
