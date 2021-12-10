@@ -14,7 +14,7 @@ const NavBar = ({number}) => {
 
   return (
     <div>
-      <Navbar className="myNav">
+      <Navbar className="myNav"> 
         <Container className="NavContainer">
           <Navbar.Brand href="#home">
             <img src={logoSVG} className="logo" alt="" />

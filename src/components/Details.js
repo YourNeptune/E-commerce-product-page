@@ -9,7 +9,7 @@ const Details = (props) => {
   const [number, setNumber] = useState(0);
 
   const addToCart = () => {
-    props.func(number)
+    props.func(number);
   };
 
   const handleMinus = () => {
@@ -22,21 +22,21 @@ const Details = (props) => {
   };
 
   return (
-    <>
-      <Container className="detailsContainer">
+    <Container>
+      <div className="detailsContainer">
         <Row className="text">
-          <p>Sneaker Company</p>
-          <h1>Fall Limited Edition Sneakers</h1>
-          <p>
+          <p className="text__label">Sneaker Company</p>
+          <h2 className="text__title">Fall Limited Edition Sneakers</h2>
+          <p className="text__body">
             These low-profile sneakers are your perfect casual wear companion.
             Featuring a durable rubber outer sole, they’ll withstand everything
             the weather can offer.
           </p>
           <div className="price">
-            <p>$125.00</p>
-            <p>50%</p>
+            <p className="price__number">$125.00</p>
+            <p className="price__label">50%</p>
           </div>
-          <p>$250.00</p>
+          <p className="price__before">$250.00</p>
         </Row>
 
         <Row className="buttons">
@@ -54,10 +54,8 @@ const Details = (props) => {
             </Button>
           </Col>
         </Row>
-      </Container>
-
-      
-    </>
+      </div>
+    </Container>
   );
 };
 
