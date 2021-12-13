@@ -24,6 +24,7 @@
 
 .sandwitchMeun {
   display: none;
+  cursor: pointer;
 }
 
 .logo {
@@ -305,6 +306,15 @@
     height: 10px;
     font-size: 6px;
   }
+  .sandwitchNav__links {
+    display: flex;
+    flex-direction: column !important;
+    font-weight: bold;
+   
+  }
+  .sandwitchNav__Container {
+    width: 50% !important;
+  }
 
   /* Details.js */
   .AddToCartButton {
@@ -321,13 +331,13 @@
 
   /* CartModal.js */
   .CartModal {
-    top:80px;
+    top: 80px;
     right: 0;
-    left:0;
+    left: 0;
     width: 100% !important;
   }
   /* ModalItem.js */
-  .ModalItem__Col{
+  .ModalItem__Col {
     width: initial !important;
   }
 }

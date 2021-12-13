@@ -5,12 +5,23 @@ import cartSVG from "../images/icon-cart.svg";
 import avatar from "../images/image-avatar.png";
 import CartModal from "./CartModal";
 import icon_meun from "../images/icon-menu.svg";
+import SandwitchNav from "./SandwitchNav";
 
 const NavBar = ({ number, getProductNumber }) => {
   const [show, setShow] = useState(false);
+  const [showNav, setShowNav] = useState(false);
 
-  const handleShowModal = () => {
+  const handleShowCartModal = () => {
     show ? setShow(false) : setShow(true);
+  };
+
+  const closeNavModal = () => {
+    setShowNav(false);
+  };
+
+  const openNav = () => {
+    setShowNav(true);
+    console.log(showNav)
   };
 
   return (
@@ -18,7 +29,7 @@ const NavBar = ({ number, getProductNumber }) => {
       <Navbar className="myNav">
         <Container className="NavContainer">
           <div className="sandwitchMeun">
-            <img src={icon_meun} alt="icon meun" />
+            <img src={icon_meun} alt="icon meun" onClick={openNav} />
           </div>
           <Navbar.Brand href="#home">
             <img src={logoSVG} className="logo" alt="" />
@@ -42,7 +53,7 @@ const NavBar = ({ number, getProductNumber }) => {
           </Nav>
           <Nav className="nav-part2">
             <Nav.Link href="#Cart" className="Navbar__cart">
-              <img src={cartSVG} onClick={handleShowModal} />
+              <img src={cartSVG} onClick={handleShowCartModal} />
               {number !== 0 && (
                 <div className="Navbar__label">
                   <span>{number}</span>
@@ -59,6 +70,8 @@ const NavBar = ({ number, getProductNumber }) => {
       {show && (
         <CartModal number={number} getProductNumber={getProductNumber} />
       )}
+
+      {showNav && <SandwitchNav closeNavModal={closeNavModal} />}
     </div>
   );
 };
