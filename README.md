@@ -29,7 +29,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./Screenshots/Desktop_design.jpeg)
-![](./Screenshots/Mobile_design.jpeg)
+![](./Screenshots/Mobile_design.jpeg){width:50%}
 
 ### Links
 
