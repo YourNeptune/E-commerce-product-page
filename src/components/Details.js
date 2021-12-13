@@ -39,7 +39,7 @@ const Details = (props) => {
           <p className="price__before">$250.00</p>
         </Row>
 
-        <Row className="">
+        <Row className="buttons">
           {/* Counter */}
           <Col sm={3} className="counterContainer">
             <img src={icon_minus} onClick={handleMinus} />

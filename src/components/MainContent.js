@@ -6,8 +6,8 @@ import NavBar from "./NavBar";
 
 const MainContent = ({func}) => {
   return (
-    <>
-      <Container className="mainContentContainer">
+    <div className="mainContentContainer">
+      <Container >
         <Row>
           <Col>
             <Cards />
@@ -17,7 +17,7 @@ const MainContent = ({func}) => {
           </Col>
         </Row>
       </Container>
-    </>
+    </div>
   );
 };
 

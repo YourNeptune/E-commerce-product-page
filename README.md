@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://ecommerce-site-941685.netlify.app/#Profile)
 
 ## My process
 
@@ -44,8 +44,9 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Mobile size & desktop size
 - [React](https://reactjs.org/) - JS library
+- React Bootstrap - UI library
 
 
 ## Author
