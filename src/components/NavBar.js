@@ -4,8 +4,9 @@ import logoSVG from "../images/logo.svg";
 import cartSVG from "../images/icon-cart.svg";
 import avatar from "../images/image-avatar.png";
 import CartModal from "./CartModal";
+import icon_meun from "../images/icon-menu.svg";
 
-const NavBar = ({number}) => {
+const NavBar = ({ number }) => {
   const [show, setShow] = useState(false);
 
   const handleShowModal = () => {
@@ -14,8 +15,11 @@ const NavBar = ({number}) => {
 
   return (
     <div>
-      <Navbar className="myNav"> 
+      <Navbar className="myNav">
         <Container className="NavContainer">
+          <div className="sandwitchMeun">
+            <img src={icon_meun} alt="icon meun" />
+          </div>
           <Navbar.Brand href="#home">
             <img src={logoSVG} className="logo" alt="" />
           </Navbar.Brand>
@@ -39,9 +43,11 @@ const NavBar = ({number}) => {
           <Nav className="nav-part2">
             <Nav.Link href="#Cart" className="Navbar__cart">
               <img src={cartSVG} onClick={handleShowModal} />
-              <div className="Navbar__label">
-                <span>{number}</span>
-              </div>
+              {number !== 0 && (
+                <div className="Navbar__label">
+                  <span>{number}</span>
+                </div>
+              )}
             </Nav.Link>
             <Nav.Link href="#Profile">
               <img src={avatar} className="avatar" />
@@ -50,7 +56,7 @@ const NavBar = ({number}) => {
         </Container>
       </Navbar>
 
-      {show && <CartModal number={number}/>}
+      {show && <CartModal number={number} />}
     </div>
   );
 };
