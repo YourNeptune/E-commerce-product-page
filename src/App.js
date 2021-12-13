@@ -4,15 +4,15 @@ import MainContent from "./components/MainContent";
 import NavBar from "./components/NavBar";
 
 function App() {
-  const [number, setNumber] = useState(0)
+  const [number, setNumber] = useState(0);
 
   const getProductNumber = (number) => {
-    setNumber(number)
-  }
+    setNumber(number);
+  };
   return (
     <div className="App">
-      <NavBar number={number}/>
-      <MainContent func={getProductNumber}/>
+      <NavBar number={number} getProductNumber={getProductNumber} />
+      <MainContent func={getProductNumber} />
     </div>
   );
 }

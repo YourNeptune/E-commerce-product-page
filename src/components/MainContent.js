@@ -4,7 +4,7 @@ import Cards from "./Cards";
 import Details from "./Details";
 import NavBar from "./NavBar";
 
-const MainContent = (props) => {
+const MainContent = ({func}) => {
   return (
     <>
       <Container className="mainContentContainer">
@@ -13,7 +13,7 @@ const MainContent = (props) => {
             <Cards />
           </Col>
           <Col>
-            <Details func={props.func}/>
+            <Details func={func}/>
           </Col>
         </Row>
       </Container>

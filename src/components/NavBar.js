@@ -6,7 +6,7 @@ import avatar from "../images/image-avatar.png";
 import CartModal from "./CartModal";
 import icon_meun from "../images/icon-menu.svg";
 
-const NavBar = ({ number }) => {
+const NavBar = ({ number, getProductNumber }) => {
   const [show, setShow] = useState(false);
 
   const handleShowModal = () => {
@@ -56,7 +56,9 @@ const NavBar = ({ number }) => {
         </Container>
       </Navbar>
 
-      {show && <CartModal number={number} />}
+      {show && (
+        <CartModal number={number} getProductNumber={getProductNumber} />
+      )}
     </div>
   );
 };

@@ -188,6 +188,9 @@
 .ModalItem__Col p {
   margin-left: 10px;
 }
+.icon--delete{
+  cursor: pointer;
+}
 
 /* Details.js */
 .detailsContainer {
