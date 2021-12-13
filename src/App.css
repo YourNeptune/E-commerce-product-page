@@ -116,7 +116,7 @@
 .counterContainer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: #f0f0f0;
   border-radius: 10px;
@@ -188,14 +188,13 @@
 .ModalItem__Col p {
   margin-left: 10px;
 }
-.icon--delete{
+.icon--delete {
   cursor: pointer;
 }
 
 /* Details.js */
 .detailsContainer {
   padding-top: 20px;
-  padding: 20px 24px;
 }
 .text {
   margin-bottom: 20px;
@@ -305,5 +304,30 @@
     width: 14px;
     height: 10px;
     font-size: 6px;
+  }
+
+  /* Details.js */
+  .AddToCartButton {
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px 0 !important;
+  }
+  .counterContainer {
+    padding: 15px 0;
+  }
+  .addToCart__Col {
+    padding: 0 !important;
+  }
+
+  /* CartModal.js */
+  .CartModal {
+    top:80px;
+    right: 0;
+    left:0;
+    width: 100% !important;
+  }
+  /* ModalItem.js */
+  .ModalItem__Col{
+    width: initial !important;
   }
 }

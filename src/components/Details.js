@@ -39,7 +39,7 @@ const Details = (props) => {
           <p className="price__before">$250.00</p>
         </Row>
 
-        <Row className="buttons">
+        <Row className="">
           {/* Counter */}
           <Col sm={3} className="counterContainer">
             <img src={icon_minus} onClick={handleMinus} />
@@ -47,7 +47,7 @@ const Details = (props) => {
             <img src={icon_plus} onClick={handlePlus} />
           </Col>
           {/* Add to cart button */}
-          <Col>
+          <Col className="addToCart__Col">
             <Button size="lg" className="AddToCartButton" onClick={addToCart}>
               <img src={cartSVG} />
               Add to cart

@@ -15,8 +15,8 @@ const ModalItem = ({ number, getProductNumber }) => {
 
   return (
     <Container className="ModalItem">
-      <Row className="ModalItem__Row">
-        <Col sm={2} className="ModalItem__Col">
+      <Row className=""> 
+        <Col md={2} className="ModalItem__Col">
           <Image
             src={image_product_1_thumbnail}
             className="ModalItem__image"
@@ -29,7 +29,7 @@ const ModalItem = ({ number, getProductNumber }) => {
             $125.00 x {number} <strong>{totalAmount(number)}</strong>
           </p>
         </Col>
-        <Col sm={1} className="ModalItem__Col icon--delete">
+        <Col md={1} className="ModalItem__Col icon--delete">
           <img src={icon_delete} onClick={handleDelete} />
         </Col>
       </Row>
