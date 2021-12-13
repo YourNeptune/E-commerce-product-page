@@ -1,6 +1,4 @@
-# Frontend Mentor - E-commerce product page solution
-
-This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+# E-commerce product page solution
 
 ## Table of contents
 
@@ -33,8 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://ecommerce-site-941685.netlify.app/#Profile)
+- Live Site URL: [Demo](https://ecommerce-site-941685.netlify.app/)
 
 ## My process
 
@@ -49,9 +46,6 @@ Users should be able to:
 - React Bootstrap - UI library
 
 
-## Author
-
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 
 
 
